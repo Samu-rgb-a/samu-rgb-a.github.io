@@ -11,14 +11,16 @@ body{
     font-family: sans-serif;
 
 }
-
-
+.logo img {
+    height: 100px;
+    width: 100px;
+}
 
 .head{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 63px;
+    height: 100px;
     background: #a39b9b;
     position: fixed;
     width: 100%;
@@ -174,4 +176,20 @@ p  {
     padding-top: 38px;
     background: #313030;
     padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+   
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
 }
