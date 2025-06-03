@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chalet Montesol</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="top-bar">
+      <div class="left">
+        <a href="https://www.facebook.com/?locale=es_ES"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://es.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/home"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="right">
+        <span><i class="fas fa-envelope"></i>  susi-gandia-hotmail.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> Carrer Cap del Moro, Barx</span>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-crown"></i> ChMontesol</div>
+      <div class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="nav-icons">
+      </div>
+
+      
+    </nav>
+    <button class="menu-toggle" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo"><i class="fas fa-crown"></i>
+      <h2>ChMontesol</h2>
+    </div>
+    <a href="#">Home</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+    
+
+    <div class="contact-info">
+      <div class="contact-item">
+        📞 <strong>Llama ahora:</strong> +675 74 61 10
+      </div>
+      <div class="contact-item">
+        📧 <strong>Email:</strong> susi-gandia@hotmail.com
+      </div>
+      <div class="contact-item">
+        ⏰ <strong>Horario:</strong><br> 24 horas<br>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      toggleBtn.classList.toggle('active');
+      sidebar.classList.toggle('active');
+    });
+  </script>
+
+    <div class="hero-text">
+      <h1>Reserva El Chalet De Tus Sueños<br>Con Booking</h1>
+    </div>
+  </header>
+
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <section id="servicios"></section>
+  <div class="section">
+    <div class="text-content">
+      <h5>Chalet Montesol</h5>
+      <h2>Ofrecemos un chalet hermoso, donde destaca su gran terraza</h2>
+      <p>Nuestro chalet cuenta con una terraza gigante, en la que encontrarás una barbacoa familiar, una zona chillout, hamacas y piscina privada.</p>
+
+      <div class="features">
+        <div class="feature">
+          <img src="data:image/png;base64,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" alt="Lighting">
+          <p>Barbacoa<br>Familiar</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios-filled/50/000000/swimming.png" alt="piscina">
+          <p>Piscina<br>Privada</p>
+        </div>
+         <div class="feature">
+          <img src="https://cdn-icons-png.flaticon.com/512/158/158294.png" alt="terraza">
+          <p>Terraza<br>Amplia</p>
+
+        </div>
+      </div>
+
+      <ul>
+        <li>Zona grande, con vistas preciosas</li>
+        <li>Una zona de hamacas, para descansar a la buena sombra</li>
+        <li>Piscina privada, podrás disfrutar asolas con tu familia y amigos</li>
+      </ul>
+
+      <a href="https://www.booking.com/hotel/es/chalet-montesol.es.html" class="btn">Descubre más</a>
+    </div>
+
+    <div class="images">
+      <img src="img/1.jpg" class="img-bottom" alt="Lobby">
+      <img src="img/2.jpg" class="img-top" alt="Interior">
+    </div>
+  </div>
+     
+
+    <div class="servicios-container">
+    <h2>Interior del Chalet</h2>
+    <p>La casa cuenta con 7 dormitorios, TV de pantalla plana con canales vía satélite, cocina equipada con lavavajillas y microondas, lavadora y 2 baños con bidet.</p>
+
+    <div class="servicio-grid">
+      <div class="servicio" onclick="window.location.href='#cocina'">
+        <img src="img/5.jpg" alt="Cocina">
+        <h3>Cocina</h3>
+        <p>Cocina completamente equipada con lavavajillas y lavadora.</p>
+      </div>
+
+      <div class="servicio" onclick="window.location.href='#dormitorios'">
+        <img src="img/6.jpg" alt="Dormitorios">
+        <h3>Dormitorios</h3>
+        <p>Dormitorios completamente equipados, para parejas, niños e individuales.</p>
+      </div>
+
+      <div class="servicio" onclick="window.location.href='#baños'">
+        <img src="img/7.jpg" alt="Baños">
+        <h3>Baños</h3>
+        <p>Baños completos con ducha, bañera y bidet.</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+ <section id="contacto"></section>
+ <section class="contacto">
+    <h1>Contáctanos</h1>
+    <p class="subtitulo">¿Tienes preguntas? ¡Escríbenos y te responderemos lo antes posible!</p>
+
+    <div class="contenedor-contacto">
+    
+      <div class="info-contacto">
+        <h2>Información</h2>
+        <p><strong>📍 Dirección:</strong> Carrer Cap del Moro n4</p>
+        <p><strong>📞 Teléfono:</strong> 674 74 61 10</p>
+        <p><strong>📧 Email:</strong> susi-gandia@hotmail.com</p>
+        <p><strong>🕐 Horario:</strong> Disponibles 24 horas</p>
+      </div>
+
+     
+      <form class="formulario-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="mapa">
+  <h2>Ubicación</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.3643589746102!2d-0.2895042234763877!3d39.007001171700786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c0133ddf7c35%3A0xfa88da42737bfb65!2sCarrer%20Cap%20del%20Moro%2C%2046758%20La%20Drova%2C%20Val%C3%A8ncia!5e0!3m2!1ses!2ses!4v1748966924238!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    width="100%"
+    height="350"
+    style="border:0; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
+</body>
+</html>
